@@ -1,0 +1,55 @@
+.winner-banner {
+  background: linear-gradient(135deg, #0a0800, #1a1200, #0a0800);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse-gold 3s ease-in-out infinite;
+}
+
+.winner-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(201,168,76,0.05), transparent);
+}
+
+.winner-confetti {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  animation: countdownPulse 1.5s ease-in-out infinite;
+}
+
+.winner-title {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: var(--gold-dark);
+  margin-bottom: 16px;
+}
+
+.winner-number {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--gold-dark);
+  margin-bottom: 8px;
+}
+
+.winner-name {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+.winner-date {
+  font-size: 0.82rem;
+  color: var(--gray-3);
+}
