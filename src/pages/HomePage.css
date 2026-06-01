@@ -377,3 +377,10 @@
   .rule-arrow { display: none; }
   .hero-rules { flex-direction: column; }
 }
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
